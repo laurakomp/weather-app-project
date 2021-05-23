@@ -16,7 +16,54 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello World</h1>
+      <div class="weather">
+        <form action="">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                class="form-control search-input"
+              />
+            </div>
+            <div class="col-3 p-0">
+              <input
+                type="submit"
+                class="btn btn-primary w-100"
+                value="Search"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="weather-info">
+          <div class="row">
+            <div class="col-6">
+              <span></span>
+              <ul>
+                <li id="time">Sunday, 19:00</li>
+                <li>
+                  <h1 id="city">Tallinn</h1>
+                </li>
+                <li id="temp">12C</li>
+                <li id="weather-description">clear sky</li>
+                <li id="wind">3km/h</li>
+                <li id="humidity">79%</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="weather-icon">🌤</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <small>
+        <a
+          href="https://github.com/laurakomp/weather-app-project"
+          target="_blank"
+          >open-source code</a
+        >
+        by Laura Komp
+      </small>
     </div>
     <script src="src/app.js"></script>
   </body>
