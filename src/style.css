@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 h1 {
@@ -29,6 +30,7 @@ li {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 10px;
+  background-color: #ffff;
 }
 
 .weather-image img {
