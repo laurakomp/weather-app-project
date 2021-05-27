@@ -22,7 +22,6 @@ li {
   line-height: 19px;
   padding: 0px;
   margin: 0px;
-  text-transform: capitalize;
 }
 .weather-app {
   max-width: 600px;
@@ -54,14 +53,18 @@ li {
   margin: 30px auto;
 }
 
-#temp strong {
-  font-size: 45px;
+.weather-temperature strong {
+  font-size: 50px;
   font-weight: 400;
   line-height: 1;
 }
 
-#temp .units {
+.weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -21px;
+}
+
+#weather-description {
+  text-transform: capitalize;
 }
