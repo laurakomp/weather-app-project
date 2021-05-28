@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 h1 {
@@ -27,12 +28,12 @@ li:first-letter {
   text-transform: capitalize;
 }
 .weather-app {
-  max-width: 600px;
+  max-width: 650px;
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 10px;
-  background-color: #ffff;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .weather-image img {
@@ -58,7 +59,7 @@ li:first-letter {
 
 .weather-temperature {
   text-align: center;
-  margin: 40px 25px 5px 30px;
+  margin: 40px 25px 5px 15px;
 }
 
 .weather-temperature strong {
@@ -70,16 +71,25 @@ li:first-letter {
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -21px;
+  top: -24px;
 }
 
 .description {
   font-size: 12px;
   line-height: 0;
-  margin: 5px 30px 30px 30px;
+  margin: 10px 30px 30px 40px;
 }
 
+.description:first-letter {
+  text-transform: capitalize;
+}
 #date,
 #city {
   text-transform: uppercase;
+}
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
 }
