@@ -29,31 +29,49 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form action="#">
+          <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
                 <input
                   type="search"
-                  placeholder="Enter a city..."
+                  placeholder="Type a city..."
                   class="form-control search-input"
+                  id="city-input"
+                  autocomplete="off"
                 />
               </div>
               <div class="col-1">
-                <input type="submit" class="btn btn-info" value="go" />
+                <input type="submit" class="btn btn-go" value="go" />
               </div>
-              <div class="col-2">
-                <input type="submit" class="btn btn-info" value="go" />
+              <div class="col-1">
+                <input type="submit" class="btn btn-current" value="go" />
               </div>
             </div>
           </form>
           <div class="weather-info">
             <div class="row">
-              <div class="col-6">
+              <div class="col-4">
                 <ul>
-                  <li>Last updated: <span id="date"></span></li>
+                  <li><span id="date"></span></li>
                   <li>
                     <h1 id="city"></h1>
                   </li>
+                  <li></li>
+                  <li>Wind: <span id="wind"> </span> km/h</li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <ul>
+                  <li>
+                    <div class="weather-image">
+                      <img src="" alt="" id="icon" />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <ul>
                   <li>
                     <div class="clearfix weather-temperature">
                       <div class="float-left">
@@ -62,15 +80,12 @@
                       </div>
                     </div>
                   </li>
-                  <li><span id="weather-description"> </span></li>
-                  <li>Wind: <span id="wind"> </span> km/h</li>
-                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>
+                    <div class="description">
+                      <span id="weather-description"> </span>
+                    </div>
+                  </li>
                 </ul>
-              </div>
-              <div class="col-6">
-                <div class="weather-image">
-                  <img src="" alt="" id="icon" />
-                </div>
               </div>
             </div>
           </div>

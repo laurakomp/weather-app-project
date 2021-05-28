@@ -39,9 +39,9 @@ li:first-letter {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 180px;
 }
-.btn-info {
+.btn-go,
+.btn-current {
   background-color: #b9d8e8;
   border-color: #b9d8e8;
   color: #ffff;
@@ -56,6 +56,11 @@ li:first-letter {
   margin: 30px auto;
 }
 
+.weather-temperature {
+  text-align: center;
+  margin: 40px 25px 5px 30px;
+}
+
 .weather-temperature strong {
   font-size: 50px;
   font-weight: 400;
@@ -66,4 +71,15 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -21px;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 0;
+  margin: 5px 30px 30px 30px;
+}
+
+#date,
+#city {
+  text-transform: uppercase;
 }
