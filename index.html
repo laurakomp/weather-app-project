@@ -21,6 +21,15 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/e37d0277f8.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
@@ -31,7 +40,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-8">
                 <input
                   type="search"
                   placeholder="Type a city..."
@@ -41,48 +50,82 @@
                 />
               </div>
               <div class="col-2">
-                <input type="submit" class="btn btn-go" value="Search" />
-              </div>
+                <button type="submit" class="btn btn-go" ><i
+                  class="fa fa-search"
+                ></i> 
             </div>
           </form>
           <div class="weather-info">
-            <div class="row">
-              <div class="col-4">
-                <ul>
-                  <li><span id="date"></span></li>
-                  <li>
-                    <h1 id="city"></h1>
-                  </li>
-                  <li></li>
-                  <li>Wind: <span id="wind"> </span> km/h</li>
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <ul>
-                  <li>
-                    <div class="weather-image">
-                      <img src="" alt="" id="icon" />
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <div class="weather-temperature">
-                  <strong id="temperature"></strong
-                  ><span class="units"
-                    ><a href="#" id="celsius-link" class="active">°C</a> |
-                    <a href="#" id="fahrenheit-link">°F</a></span
-                  >
+            <ul>
+              <li>
+                <span id="date">
+                </span>
+              </li>
+              <li>
+                <h1 id="city"></h1>
+              </li>
+              <li>
+                <div class="weather-image">
+                  <img src="" alt="" id="icon">
                 </div>
-                <div class="description">
-                  <span id="weather-description"> </span>
+              </li>
+              <li>
+                <div class="weather-temperature">
+                  <strong id="temperature"></strong>
+                  <span class="units">
+                    <a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
+
+                </div>
+
+              </li>
+            </ul>
+            <hr class="new1">
+            <div class="description">
+              <div class="row">
+                <div class="col-4">
+                  <div class="wind">
+                    <ul>
+                      <li>
+                        wind
+                      </li>
+                      <li>
+                        <span id="wind"></span>
+                        <span class="wind-units">km/h</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <!-- same class as the whole section - test it out -->
+                  <div class="description">
+                    <ul>
+                      <li>
+                        <span id="weather-description">
+
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="humidity">
+                    <ul>
+                      <li>
+                        humidity
+                      </li>
+                      <li><span id="humidity"></span>%</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <small>
+       
+      </div>
+       <small>
           <a
             href="https://github.com/laurakomp/weather-app-project"
             target="_blank"
@@ -90,7 +133,6 @@
           >
           by Laura Komp
         </small>
-      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
