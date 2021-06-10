@@ -34,7 +34,12 @@ li:first-letter {
   padding: 20px;
   border: none;
   border-radius: 10px;
-  background: rgba(220, 227, 234);
+  background: linear-gradient(
+    109.6deg,
+    rgb(223, 234, 247) 11.2%,
+    rgb(244, 248, 252) 91.1%
+  );
+
   display: block;
   margin: 50px auto 0px auto;
   box-shadow: 10px 10px 20px rgba(124, 131, 138, 0.6);
@@ -108,4 +113,23 @@ hr.new1 {
   color: #000000;
   cursor: default;
   text-decoration: none;
+}
+
+.weather-forecast {
+  text-align: center;
+  color: #000000;
+  display: block;
+  margin: 50px auto 0px auto;
+}
+
+.weather-forecast-date {
+  font-size: 15px;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.4;
 }
