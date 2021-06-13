@@ -51,6 +51,11 @@ li:first-letter {
   margin-right: auto;
   max-width: 180px;
 }
+
+.weather-image {
+  margin-top: -10px;
+}
+
 .btn-go {
   background-color: rgba(220, 227, 234);
   border-color: rgba(220, 227, 234);
@@ -84,7 +89,7 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-  font-size: 45px;
+  font-size: 48px;
   font-weight: 400;
   line-height: 1;
 }
@@ -92,7 +97,7 @@ li:first-letter {
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -20px;
+  top: -24px;
   text-decoration: none;
 }
 .wind-units {
@@ -102,36 +107,23 @@ li:first-letter {
   margin: 0px 30px 0px 30px;
 }
 
-hr.new1 {
-  width: 50px;
+hr.line {
+  width: 65px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.weather-temperature .active {
-  color: #000000;
-  cursor: default;
-  text-decoration: none;
-}
-
 .weather-forecast {
-  margin-top: 20px;
-  margin-left: 10px;
+  margin: 20px 30px 10px 30px;
   text-align: center;
   color: #000000;
   padding: 15px;
   background-color: rgb(255, 255, 255, 0.7);
   border: none;
   border-radius: 10px;
-}
-
-.weather-forecast-date {
-  font-size: 15px;
-}
-
-.weather-forecast-temperature {
-  font-size: 13px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .weather-forecast-temperature-min {
